@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Конструкторы объектов</h2>
+
+<p id="demo"></p>
+
+<script>
+// Функция конструктора для объектов Person
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Создайте объект Person
+var myFather = new Person("Щипунов", "Андрей", 50, "зеленый");
+
+// Отображение возраста
+document.getElementById("demo").innerHTML = "Моему отцу " + myFather.age + "."; 
+</script>
+
+</body>
+</html>
